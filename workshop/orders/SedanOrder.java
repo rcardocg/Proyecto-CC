@@ -1,0 +1,36 @@
+package workshop.orders.*;
+public class SedanOrder extends PaintOrder{
+	int number, total;
+	double time;
+	String plate;
+
+	public SedanOrder( number , time , plate , total){	//llama a las variables de PaintOrder
+		super();
+	}
+	public boolean var(){
+		if(!getTotal()==0){		//verifica el total
+		}else{
+			return false;
+		}
+	}
+	public void getType(){
+		System.out.println("Tipo Sedan");	//tipo de pieza
+	}
+
+	public getPrice(){
+		return total;	//precio por la pieza
+	}
+
+	public void prcs(){
+		System.out.println("Procesando...")	//estado PROCESSING en el PaintOrder
+		this.state = State.PROCESSING;
+	}
+	public void fin(){
+		System.out.println("LISTO")	//pieza finalizada
+		this.state = State.DONE;
+	}
+	public void pt{	//piezas totales
+		total-=;	//resta una pieza de las especificadas
+	}
+
+}
